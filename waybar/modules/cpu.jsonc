@@ -1,0 +1,10 @@
+{
+  "cpu": {
+    "interval": 10,
+    "format": "󰍛 {usage}%",
+    "rotate": 0,
+    "exec": "sensors | awk '/Package id 0:/ {print \" \" $4}'",
+    "format-alt": "{icon0}{icon1}{icon2}{icon3}",
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+  }
+}
